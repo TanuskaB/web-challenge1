@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="cupids-canvas.css">
 </head>
 <body>
-    
+
     <header>
         <div class="logo">Cupid's Canvas 🏹</div>
         <nav>
@@ -27,6 +27,8 @@
             <a href="#garden" style="background: var(--valentine-red); color: white; padding: 10px 20px; border-radius: 20px;">Start the Journey</a>
         </div>
 
+        <!-- Two people meeting in the middle -->
+        
         <div class="card-grid">
             <div class="card">
                 <h3>💖 Interactive Scenes</h3>
@@ -41,21 +43,36 @@
                 <p>Watch out! Cupid is flying around with his magical arrows.</p>
             </div>
         </div>
+        
+
+        <div class="container"> 
+            <div class="heart"></div>
+        
+            <img src="asset/female.png" class="image-l">
+            <img src="asset/male.png" class="image-right">
+            
+
+        </div>
+        
+        
     </section>
 
     <section id="garden" class="page">
-        <h2 style="text-align: center; margin-bottom: 2rem;">Option 1: Cupid's Valentine Town Square</h2>
-        
+        <img src="asset/carriage.png" alt="A romantic horse-drawn carriage" class="carriage-animation">
+
+        <h2 style="text-align: center; color: white; background-color: black; text-shadow: 2px 2px 4px #000;">
+            Cupid's Valentine Town Square
+        </h2>
+
         <div style="text-align: center; margin-bottom: 2rem;">
             <span class="floating-heart">❤️</span>
             <span class="floating-heart" style="animation-delay: 0.5s">💖</span>
-            <span class="floating-heart" style="animation-delay: 1s">💜</span>
         </div>
 
         <div class="card-grid">
             <div class="card">
                 <h3>The Atmosphere</h3>
-                <p>A lively small-town scene filled with soft drifting clouds and heart-shaped confetti drifting in the air.</p>
+                <p>A lively small-town scene filled with soft drifting clouds and heart-shaped confetti.</p>
             </div>
             <div class="card">
                 <h3>The Characters</h3>
@@ -66,25 +83,27 @@
                 <p>Cupid flies overhead shooting hearts while a carriage passes by periodically.</p>
             </div>
         </div>
-        
-        <div style="text-align: center; margin-top: 3rem;">
-            <a href="#romance" style="color: var(--valentine-red); text-decoration: underline;">Continue to Eternal Romance &rarr;</a>
+
+        <div style="text-align: center; margin-top: 3rem; position: relative; z-index: 20;">
+            <a href="#romance" style="background: white; color: var(--valentine-red); padding: 10px 20px; border-radius: 20px; font-weight: bold;">
+                Next: Eternal Romance &rarr;
+            </a>
         </div>
     </section>
 
     <section id="romance" class="page">
         <h2 style="text-align: center;">Option 2: Moonlit Valentine Park</h2>
-        
+
         <div class="hero" style="background: linear-gradient(to bottom, #2d3436, #636e72); color: white;">
             <img class="moon"
-                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpngimg.com%2Fuploads%2Fmoon%2Fmoon_PNG9.png&f=1&nofb=1&ipt=8b8c9f268bbc8a83a42268f732d6c27158b72b650ddd97de6b9d4d4649c0bea0"
+                src="asset/moon.png"
                 alt="moon">
 
             <h1 style="color: var(--cupid-pink);">A Quiet Night</h1>
             <p>A calm, romantic night park scene with soft animations and fireflies blinking.</p>
 
             <img class="clouds-bg"
-                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fthumbnails%2F047%2F601%2F046%2Fsmall_2x%2Flarge-dark-cumulus-cloud-cut-out-stock-png.png&f=1&nofb=1&ipt=4ac62198bcc37d8bf7b7ecbfc04354f7eefba2ba1a7fe49a8cd5753cab5d41ebS"
+                src="asset/clouds.png"
                 alt="clouds">
         </div>
 
