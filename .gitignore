@@ -1,0 +1,16 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# IDE/Editor Files
+.vscode/
+.idea/
+*.suo
+*.user
+*.swp
+
+# Build Artifacts
+/dist/
+/build/
+*.log

@@ -206,11 +206,26 @@ nav a:hover, nav a:focus {
     animation: flyAcross 8s linear infinite; 
 }
 
+.carriage-animation {
+    position: absolute;
+    bottom: 20px;
+    left: -400px;
+    width: 300px;       /* Adjust this size based on your actual png */
+    height: auto;
+    z-index: 10;
+    /* This makes it drive across every 12 seconds */
+    animation: driveAcross 12s linear infinite;
+}
+
 @keyframes flyAcross {
     0% { left: -10%; }
     100% { left: 110%; }
 }
 
+@keyframes driveAcross {
+    0% { left: -400px; }
+    100% { left: 100%; }
+}
 /* =========================================
    7. FOOTER
    ========================================= */
@@ -228,4 +243,14 @@ footer p::before {
 
 footer p::after {
     content: " ❤️";
+}
+
+#garden {
+    /* Pointing to your specific local file */
+    background-image: url('asset/garden.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; /* Needed for the absolute position of the carriage */
+    overflow: hidden;   /* Hides the carriage when it drives off screen */
 }
