@@ -7,8 +7,108 @@
     <link rel="stylesheet" href="cupids-canvas.css">
 </head>
 <body>
-
     
+    <header>
+        <div class="logo">Cupid's Canvas 🏹</div>
+        <nav>
+            <a href="#beginning">Home</a>
+            <a href="#garden">The Garden</a>
+            <a href="#romance">Romance</a>
+        </nav>
+    </header>
+
+    <section id="beginning" class="page">
+        <div class="cupid-arrow">💘</div>
+
+        <div class="hero">
+            <h1>Welcome to the Season of Love</h1>
+            <p>Explore our interactive Valentine's Day environments. Pick a scene to see the magic happen.</p>
+            <br>
+            <a href="#garden" style="background: var(--valentine-red); color: white; padding: 10px 20px; border-radius: 20px;">Start the Journey</a>
+        </div>
+
+        <div class="card-grid">
+            <div class="card">
+                <h3>💖 Interactive Scenes</h3>
+                <p>Experience lively environments with falling hearts and moving clouds.</p>
+            </div>
+            <div class="card">
+                <h3>💌 Digital Valentines</h3>
+                <p>Send virtual love notes to your friends and family.</p>
+            </div>
+            <div class="card">
+                <h3>🏹 Cupid's Corner</h3>
+                <p>Watch out! Cupid is flying around with his magical arrows.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="garden" class="page">
+        <h2 style="text-align: center; margin-bottom: 2rem;">Option 1: Cupid's Valentine Town Square</h2>
+        
+        <div style="text-align: center; margin-bottom: 2rem;">
+            <span class="floating-heart">❤️</span>
+            <span class="floating-heart" style="animation-delay: 0.5s">💖</span>
+            <span class="floating-heart" style="animation-delay: 1s">💜</span>
+        </div>
+
+        <div class="card-grid">
+            <div class="card">
+                <h3>The Atmosphere</h3>
+                <p>A lively small-town scene filled with soft drifting clouds and heart-shaped confetti drifting in the air.</p>
+            </div>
+            <div class="card">
+                <h3>The Characters</h3>
+                <p>Pedestrians walking with flowers, a couple on a bench, and birds landing on lamp posts.</p>
+            </div>
+            <div class="card">
+                <h3>The Action</h3>
+                <p>Cupid flies overhead shooting hearts while a carriage passes by periodically.</p>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="#romance" style="color: var(--valentine-red); text-decoration: underline;">Continue to Eternal Romance &rarr;</a>
+        </div>
+    </section>
+
+    <section id="romance" class="page">
+        <h2 style="text-align: center;">Option 2: Moonlit Valentine Park</h2>
+        
+        <div class="hero" style="background: linear-gradient(to bottom, #2d3436, #636e72); color: white;">
+            <h1 style="color: var(--cupid-pink);">A Quiet Night</h1>
+            <p>A calm, romantic night park scene with soft animations and fireflies blinking.</p>
+        </div>
+
+        <div class="card-grid">
+            <div class="card">
+                <h3>Visual Features</h3>
+                <ul style="text-align: left; padding-left: 20px; list-style-type: none;">
+                    <li>✨ Fireflies blinking</li>
+                    <li>🌙 Clouds drifting across the moon</li>
+                    <li>🚲 A bike rider in the distance</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Why it Works</h3>
+                <p>Relaxed, beautiful, and realistic. Uses silhouettes so detailed art isn't needed.</p>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="#beginning" style="background: var(--chocolate); color: var(--vanilla); padding: 10px 20px; border-radius: 20px;">Back to Start</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>Created for the Web Challenge</p>
+    </footer>
+
+    <script>
+        if (!window.location.hash) {
+            window.location.hash = "#beginning";
+        }
+    </script>
 
 </body>
 </html>
