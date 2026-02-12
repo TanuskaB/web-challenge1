@@ -229,3 +229,143 @@ footer p::before {
 footer p::after {
     content: " ❤️";
 }
+
+.container {
+        position: relative;
+        width: 500px;
+        height: 500px;
+}
+
+.heart {
+    position: absolute;
+    top: 50%;
+    left: 120%;
+    width: 250px;
+    height: 250px;
+    background: #ff1e56;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    z-index: 1;
+}
+
+.heart::before,
+.heart::after {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: #ff1e56;
+    border-radius: 50%;
+}
+
+.heart::before {
+    top: -125px;
+    left: 0;
+}
+
+.heart::after {
+    left: 125px;
+    top: 0;
+}
+
+
+    /* Left Person */
+.image-l {
+    position: absolute;
+    bottom: 120px;
+    width: 220px;
+    height: 300px;
+    left: 70%;
+    object-fit: cover;
+    border-radius: 15px;
+    z-index: 2;
+}
+
+    /* Right Person */
+.image-right {
+    position: absolute;
+    bottom: 120px;
+    width: 220px;
+    height: 300px;
+    left: 120%;
+    object-fit: cover;
+    border-radius: 15px;
+    z-index: 2;
+}
+
+.author {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    font-size: 20px;
+}
+
+ @keyframes moveRight {
+    from { left: 80px; }
+    to { left: 150px; }
+}
+
+@keyframes moveLeft {
+    from { right: 80px; }
+    to { right: 150px; }
+}
+
+#garden {
+    /* Pointing to your specific local file */
+    background-image: url('asset/garden.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; /* Needed for the absolute position of the carriage */
+    overflow: hidden;   /* Hides the carriage when it drives off screen */
+}
+
+.carriage-animation {
+    position: absolute;
+    bottom: 20px;       /* Puts it near the bottom of the garden */
+    left: -400px;       /* Starts off-screen to the left */
+    width: 300px;       /* Adjust this size based on your actual png */
+    height: auto;
+    z-index: 10;
+    /* This makes it drive across every 12 seconds */
+    animation: driveAcross 12s linear infinite;
+}
+@keyframes driveAcross {
+    0% { left: -400px; }        /* Start off-screen left */
+    100% { left: 100%; }        /* Drive until off-screen right */
+}
+
+/* background clouds layer */
+.hero .clouds-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  pointer-events: none;
+  animation: moveClouds 20s linear infinite;
+}
+
+/* moon layer  */
+.hero .moon {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  z-index: 3;
+  pointer-events: none;
+}
+.hero h1,
+.hero p,
+.hero h2,
+.hero h3 {
+  position: relative;
+  z-index: 5;
+}
+@keyframes moveClouds {
+  0%   { transform: translateX(-8%); }
+  50%  { transform: translateX(0%); }
+  100% { transform: translateX(8%); }
+}
